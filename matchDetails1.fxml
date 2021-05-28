@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <BorderPane prefHeight="875.0" prefWidth="1340.0" styleClass="white-background" stylesheets="@../values/styles.css">
+            <left>
+                <VBox prefHeight="810.0" prefWidth="461.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <VBox prefHeight="279.0" prefWidth="462.0" styleClass="rounded-bottom-background" stylesheets="@../values/styles.css">
+                            <children>
+                                <HBox alignment="CENTER_LEFT" prefWidth="200.0">
+                                    <children>
+                                        <Button fx:id="backButton" mnemonicParsing="false" onAction="#handleBtn1" styleClass="transparent-background" stylesheets="@../values/styles.css">
+                                            <graphic>
+                                                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../img/ic_back.png" />
+                                                    </image></ImageView>
+                                            </graphic>
+                                            <HBox.margin>
+                                                <Insets left="10.0" />
+                                            </HBox.margin>
+                                        </Button>
+                                        <Label alignment="CENTER" prefHeight="100.0" prefWidth="234.0" text="UEFA Champions League" textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="18.0" />
+                                            </font>
+                                        </Label>
+                                        <Circle fill="#54d39d" radius="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                                        <Label alignment="CENTER" prefHeight="25.0" prefWidth="41.0" text="LIVE" textFill="#54d39d">
+                                            <HBox.margin>
+                                                <Insets />
+                                            </HBox.margin>
+                                            <font>
+                                                <Font name="System Bold" size="16.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets />
+                                    </VBox.margin>
+                                </HBox>
+                                <VBox prefHeight="200.0" prefWidth="431.0">
+                                    <children>
+                                        <HBox alignment="CENTER" prefHeight="186.0" prefWidth="462.0" spacing="20.0">
+                                            <children>
+                                                <VBox alignment="CENTER" prefHeight="186.0" prefWidth="312.0">
+                                                    <children>
+                                                        <ImageView fitHeight="94.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../img/ic_barca-removebg-preview.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                        <Label alignment="CENTER" prefHeight="50.0" prefWidth="131.0" text="Fc Barcelona" textFill="WHITE">
+                                                            <font>
+                                                                <Font name="System Bold" size="18.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </VBox>
+                                                <HBox prefHeight="186.0" prefWidth="462.0">
+                                                    <children>
+                                                        <VBox alignment="CENTER" prefHeight="186.0" prefWidth="130.0" />
+                                                        <HBox prefHeight="186.0" prefWidth="462.0">
+                                                            <children>
+                                                                <HBox prefHeight="186.0" prefWidth="462.0">
+                                                                    <children>
+                                                                        <VBox alignment="CENTER" prefHeight="186.0" prefWidth="0.0" />
+                                                                        <VBox alignment="TOP_CENTER" prefHeight="186.0" prefWidth="148.0">
+                                                                            <children>
+                                                                                <Label alignment="CENTER" prefHeight="96.0" prefWidth="204.0" text="4 - 1" textFill="WHITE">
+                                                                                    <font>
+                                                                                        <Font name="System Bold" size="26.0" />
+                                                                                    </font>
+                                                                                </Label>
+                                                                                <Label alignment="CENTER" layoutX="12.0" layoutY="10.0" prefHeight="44.0" prefWidth="204.0" text="78'" textFill="WHITE">
+                                                                                    <font>
+                                                                                        <Font name="System Bold" size="18.0" />
+                                                                                    </font>
+                                                                                </Label>
+                                                                            </children>
+                                                                        </VBox>
+                                                                        <VBox alignment="CENTER" prefHeight="186.0" prefWidth="118.0">
+                                                                            <children>
+                                                                                <ImageView fitHeight="97.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                                    <image>
+                                                                                        <Image url="@../img/ic_realmadrid-removebg-preview.png" />
+                                                                                    </image>
+                                                                                </ImageView>
+                                                                                <Label alignment="CENTER" prefHeight="50.0" prefWidth="130.0" text="Real Madrid" textFill="WHITE">
+                                                                                    <font>
+                                                                                        <Font name="System Bold" size="18.0" />
+                                                                                    </font>
+                                                                                </Label>
+                                                                            </children>
+                                                                        </VBox>
+                                                                    </children>
+                                                                </HBox>
+                                                            </children>
+                                                        </HBox>
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </VBox>
+                        <VBox prefHeight="376.0" prefWidth="431.0">
+                            <children>
+                                <Pane prefHeight="54.0" prefWidth="461.0" />
+                                <Label alignment="CENTER" prefHeight="80.0" prefWidth="431.0" text="Match Details">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <HBox prefHeight="60.0" prefWidth="431.0">
+                                    <children>
+                                        <Label alignment="CENTER" prefHeight="50.0" prefWidth="131.0" text="12">
+                                            <font>
+                                                <Font name="System Bold" size="18.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="70.0" prefWidth="210.0" text="Shooting" textFill="#b1b1b1">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="131.0" text="8">
+                                            <font>
+                                                <Font name="System Bold" size="18.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <HBox layoutX="10.0" layoutY="90.0" prefHeight="60.0" prefWidth="431.0">
+                                    <children>
+                                        <Label alignment="CENTER" prefHeight="50.0" prefWidth="131.0" text="24">
+                                            <font>
+                                                <Font name="System Bold" size="18.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="70.0" prefWidth="210.0" text="Attacks" textFill="#b1b1b1">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="131.0" text="20">
+                                            <font>
+                                                <Font name="System Bold" size="18.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <HBox layoutX="10.0" layoutY="148.0" prefHeight="60.0" prefWidth="431.0">
+                                    <children>
+                                        <Label alignment="CENTER" prefHeight="50.0" prefWidth="131.0" text="65%">
+                                            <font>
+                                                <Font name="System Bold" size="18.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="70.0" prefWidth="210.0" text="Possession" textFill="#b1b1b1">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="131.0" text="35%">
+                                            <font>
+                                                <Font name="System Bold" size="18.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <HBox layoutX="10.0" layoutY="206.0" prefHeight="60.0" prefWidth="431.0">
+                                    <children>
+                                        <Label alignment="CENTER" prefHeight="50.0" prefWidth="131.0" text="2">
+                                            <font>
+                                                <Font name="System Bold" size="18.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="70.0" prefWidth="210.0" text="Yellow Cards" textFill="#b1b1b1">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="131.0" text="4">
+                                            <font>
+                                                <Font name="System Bold" size="18.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <HBox layoutX="10.0" layoutY="264.0" prefHeight="60.0" prefWidth="431.0">
+                                    <children>
+                                        <Label alignment="CENTER" prefHeight="50.0" prefWidth="131.0" text="10">
+                                            <font>
+                                                <Font name="System Bold" size="18.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="70.0" prefWidth="210.0" text="Corners" textFill="#b1b1b1">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="131.0" text="7">
+                                            <font>
+                                                <Font name="System Bold" size="18.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <Pane prefHeight="59.0" prefWidth="461.0" />
+                        <VBox alignment="CENTER" prefHeight="161.0" prefWidth="431.0" styleClass="rounded-top-background" stylesheets="@../values/styles.css">
+                            <children>
+                                <Label alignment="CENTER" prefHeight="69.0" prefWidth="475.0" text="Head To Head" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <HBox alignment="CENTER" prefHeight="99.0" prefWidth="461.0" spacing="5.0">
+                                    <children>
+                                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../img/ic_barca-removebg-preview.png" />
+                                            </image>
+                                        </ImageView>
+                                        <VBox prefHeight="117.0" prefWidth="100.0">
+                                            <children>
+                                                <Label alignment="CENTER" prefHeight="41.0" prefWidth="100.0" text="Win" textFill="WHITE">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="41.0" prefWidth="100.0" text="26" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="System Bold" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </VBox>
+                                        <Pane prefHeight="70.0" prefWidth="1.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                                        <VBox layoutX="180.0" layoutY="10.0" prefHeight="117.0" prefWidth="100.0">
+                                            <children>
+                                                <Label alignment="CENTER" prefHeight="41.0" prefWidth="100.0" text="Draw" textFill="WHITE">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="41.0" prefWidth="100.0" text="15" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="System Bold" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </VBox>
+                                        <Pane layoutX="76.0" layoutY="10.0" prefHeight="70.0" prefWidth="1.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                                        <VBox layoutX="271.0" layoutY="10.0" prefHeight="117.0" prefWidth="100.0">
+                                            <children>
+                                                <Label alignment="CENTER" prefHeight="41.0" prefWidth="100.0" text="Loss" textFill="WHITE">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="41.0" prefWidth="100.0" text="25" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="System Bold" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </VBox>
+                                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../img/ic_realmadrid-removebg-preview.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                            </children></VBox>
+                    </children>
+                </VBox>
+            </left>
+            <center>
+                <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <HBox prefHeight="50.0" prefWidth="200.0" styleClass="primary-background" stylesheets="@../values/styles.css">
+                            <children>
+                                <Button fx:id="homeTeamBtn" alignment="CENTER" mnemonicParsing="false" onAction="#handleHomeTeamBtn" prefHeight="48.0" prefWidth="293.0" styleClass="primary-background" stylesheets="@../values/styles.css" text="Home Team" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="tableBtn" alignment="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleTableBtn" prefHeight="48.0" prefWidth="293.0" styleClass="primary-background" stylesheets="@../values/styles.css" text="Table" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="guestTeamBtn" alignment="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleGuestBtn" prefHeight="48.0" prefWidth="293.0" styleClass="primary-background" stylesheets="@../values/styles.css" text="Guest Team" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </HBox>
+                        <Pane prefHeight="8.0" prefWidth="879.0" VBox.vgrow="ALWAYS" />
+                        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="75.0" prefWidth="233.0" style="-fx-background-radius: 20;" styleClass="primary-background" stylesheets="@../values/styles.css">
+                            <children>
+                                <ImageView fitHeight="77.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/zidane-removebg-preview.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="20.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                                <VBox alignment="CENTER_LEFT" prefHeight="77.0" prefWidth="145.0">
+                                    <children>
+                                        <Label prefHeight="32.0" prefWidth="136.0" text="Zinedine Zidane" textFill="#fffbfb">
+                                            <font>
+                                                <Font name="System Bold" size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <Label prefHeight="6.0" prefWidth="136.0" text="Coach" textFill="#fffbfb">
+                                            <font>
+                                                <Font size="16.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                    <padding>
+                                        <Insets left="10.0" />
+                                    </padding>
+                                </VBox>
+                            </children>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <VBox.margin>
+                                <Insets bottom="6.0" top="10.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <ImageView fitHeight="724.0" fitWidth="595.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/realmadridlineUP.png" />
+                            </image>
+                        </ImageView>
+                        <Pane prefHeight="17.0" prefWidth="879.0" />
+                    </children>
+                </VBox>
+            </center></BorderPane>
+    </children>
+</GridPane>

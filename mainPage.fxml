@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainPageController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <BorderPane>
+         <center>
+            <AnchorPane prefHeight="884.0" prefWidth="1340.0">
+               <children>
+                  <VBox layoutY="-2.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="109.0" prefWidth="1340.0" styleClass="primary-background" stylesheets="@../values/styles.css">
+                           <children>
+                              <ImageView fitHeight="61.0" fitWidth="57.0" layoutX="483.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/laliga-removebg-preview.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fitHeight="81.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/seria%20a-removebg-preview.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label text="Live Football Scores" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria Bold" size="36.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="61.0" fitWidth="80.0" layoutX="451.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/bundesliga-removebg-preview.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="20.0" right="20.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fitHeight="61.0" fitWidth="57.0" layoutX="429.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/ligue%201-removebg-preview.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets top="30.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="-2.0" layoutY="107.0" prefHeight="805.0" prefWidth="323.0">
+                     <children>
+                        <Pane prefHeight="3.0" prefWidth="200.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <VBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="323.0" styleClass="primary-background-darker" stylesheets="@../values/styles.css">
+                           <children>
+                              <Label text="Home" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Pane layoutX="10.0" layoutY="128.0" prefHeight="3.0" prefWidth="200.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="59.0" prefWidth="323.0" styleClass="primary-background-darker" stylesheets="@../values/styles.css">
+                           <children>
+                              <Label text="UEFA Champions League" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Pane layoutX="10.0" layoutY="187.0" prefHeight="2.0" prefWidth="200.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="69.0" prefHeight="59.0" prefWidth="323.0" styleClass="primary-background-darker" stylesheets="@../values/styles.css">
+                           <children>
+                              <Label text="Europa League" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Pane layoutX="10.0" layoutY="246.0" prefHeight="2.0" prefWidth="200.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="128.0" prefHeight="59.0" prefWidth="323.0" styleClass="primary-background-darker" stylesheets="@../values/styles.css">
+                           <children>
+                              <Label text="England" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Pane layoutX="10.0" layoutY="305.0" prefHeight="2.0" prefWidth="200.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="187.0" prefHeight="59.0" prefWidth="323.0" styleClass="primary-background-darker" stylesheets="@../values/styles.css">
+                           <children>
+                              <Label text="Spain" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Pane layoutX="10.0" layoutY="364.0" prefHeight="2.0" prefWidth="200.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="246.0" prefHeight="59.0" prefWidth="323.0" styleClass="primary-background-darker" stylesheets="@../values/styles.css">
+                           <children>
+                              <Label text="Italy" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Pane layoutX="10.0" layoutY="423.0" prefHeight="2.0" prefWidth="200.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="305.0" prefHeight="59.0" prefWidth="323.0" styleClass="primary-background-darker" stylesheets="@../values/styles.css">
+                           <children>
+                              <Label text="Germany" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Pane prefHeight="2.0" prefWidth="200.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="364.0" prefHeight="59.0" prefWidth="323.0" styleClass="primary-background-darker" stylesheets="@../values/styles.css">
+                           <children>
+                              <Label text="France" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Pane layoutX="10.0" layoutY="441.0" prefHeight="2.0" prefWidth="200.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="444.0" prefHeight="59.0" prefWidth="323.0" styleClass="primary-background-darker" stylesheets="@../values/styles.css">
+                           <children>
+                              <Label text="Euro 2021" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Pane layoutX="10.0" layoutY="506.0" prefHeight="2.0" prefWidth="200.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="509.0" prefHeight="59.0" prefWidth="323.0" styleClass="primary-background-darker" stylesheets="@../values/styles.css">
+                           <children>
+                              <Label text="World Cup" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Pane layoutX="10.0" layoutY="568.0" prefHeight="2.0" prefWidth="200.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="571.0" prefHeight="59.0" prefWidth="323.0" styleClass="primary-background-darker" stylesheets="@../values/styles.css">
+                           <children>
+                              <Label text="National Friendly Matches" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Pane layoutX="10.0" layoutY="630.0" prefHeight="2.0" prefWidth="200.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="633.0" prefHeight="59.0" prefWidth="323.0" styleClass="primary-background-darker" stylesheets="@../values/styles.css">
+                           <children>
+                              <Label text="Club Friendly Matches" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Pane layoutX="10.0" layoutY="692.0" prefHeight="2.0" prefWidth="200.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="695.0" prefHeight="73.0" prefWidth="323.0" styleClass="primary-background-darker" stylesheets="@../values/styles.css">
+                           <children>
+                              <Label text="Kosovo" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="327.0" layoutY="107.0" prefHeight="805.0" prefWidth="680.0" styleClass="primary-leftColumn" stylesheets="@../values/styles.css">
+                     <children>
+                        <Pane prefHeight="2.0" prefWidth="507.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <VBox alignment="CENTER" prefHeight="59.0" prefWidth="518.0" styleClass="primary-leftColumn" stylesheets="@../values/styles.css">
+                           <children>
+                              <Label text="Scores" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Pane prefHeight="2.0" prefWidth="507.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <HBox alignment="CENTER" prefHeight="59.0" prefWidth="200.0">
+                           <children>
+                              <Label prefWidth="115.0" text="Fc Barcelona" textFill="#e4dddd">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="scoreOneBtn" mnemonicParsing="false" onAction="#handleBtn2" styleClass="primary-background" stylesheets="@../values/styles.css" text="3 - 1" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="30.0" right="30.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Label prefWidth="115.0" text="Sevilla Fc" textFill="#c6b8b8">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane layoutX="10.0" layoutY="69.0" prefHeight="2.0" prefWidth="507.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="72.0" prefHeight="59.0" prefWidth="200.0">
+                           <children>
+                              <Label prefWidth="115.0" text="Man. City" textFill="#e4dddd">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Button mnemonicParsing="false" onAction="#handleBtn2" styleClass="primary-background" stylesheets="@../values/styles.css" text="2 - 3" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="30.0" right="30.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Label prefWidth="115.0" text="Liverpool" textFill="#e4dddd">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane layoutX="10.0" layoutY="131.0" prefHeight="2.0" prefWidth="507.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="134.0" prefHeight="59.0" prefWidth="200.0">
+                           <children>
+                              <Label prefWidth="115.0" text="Bayern Munich" textFill="#e4dddd">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Button mnemonicParsing="false" onAction="#handleBtn2" styleClass="primary-background" stylesheets="@../values/styles.css" text="5 - 3" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="30.0" right="30.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Label prefWidth="115.0" text="Schalke 04" textFill="#e4dddd">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane layoutX="10.0" layoutY="193.0" prefHeight="2.0" prefWidth="507.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="196.0" prefHeight="59.0" prefWidth="200.0">
+                           <children>
+                              <Label prefWidth="115.0" text="Real Madrid" textFill="#e4dddd">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Button mnemonicParsing="false" onAction="#handleBtn2" styleClass="primary-background" stylesheets="@../values/styles.css" text="4 - 1" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="30.0" right="30.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Label prefWidth="115.0" text="Osasuna" textFill="#e4dddd">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane layoutX="10.0" layoutY="255.0" prefHeight="2.0" prefWidth="507.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="258.0" prefHeight="59.0" prefWidth="200.0">
+                           <children>
+                              <Label prefHeight="25.0" prefWidth="115.0" text="Ath. Madrid" textFill="#e4dddd">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Button mnemonicParsing="false" onAction="#handleBtn2" styleClass="primary-background" stylesheets="@../values/styles.css" text="3 - 1" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="30.0" right="30.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Label prefWidth="115.0" text="Celta de Vigo" textFill="#e4dddd">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane layoutX="10.0" layoutY="317.0" prefHeight="2.0" prefWidth="507.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="320.0" prefHeight="59.0" prefWidth="200.0">
+                           <children>
+                              <Label prefWidth="115.0" text="Chelsea" textFill="#e4dddd">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Button mnemonicParsing="false" onAction="#handleBtn2" styleClass="primary-background" stylesheets="@../values/styles.css" text="2 - 1" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="30.0" right="30.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Label prefWidth="115.0" text="Arsenal " textFill="#e4dddd">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane layoutX="10.0" layoutY="379.0" prefHeight="2.0" prefWidth="507.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="382.0" prefHeight="59.0" prefWidth="200.0">
+                           <children>
+                              <Label prefWidth="115.0" text="PSG" textFill="#e4dddd">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Button mnemonicParsing="false" onAction="#handleBtn2" styleClass="primary-background" stylesheets="@../values/styles.css" text="4 - 2" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="30.0" right="30.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Label prefWidth="115.0" text="Monaco Fc" textFill="#e4dddd">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane layoutX="10.0" layoutY="441.0" prefHeight="2.0" prefWidth="507.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="444.0" prefHeight="59.0" prefWidth="200.0">
+                           <children>
+                              <Label prefWidth="115.0" text="Juventus" textFill="#e4dddd">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Button mnemonicParsing="false" onAction="#handleBtn2" styleClass="primary-background" stylesheets="@../values/styles.css" text="3 - 2" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="30.0" right="30.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Label prefWidth="115.0" text="Napoli" textFill="#e4dddd">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane layoutX="10.0" layoutY="503.0" prefHeight="2.0" prefWidth="507.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="506.0" prefHeight="59.0" prefWidth="200.0">
+                           <children>
+                              <Label prefWidth="115.0" text="Atalanta" textFill="#e4dddd">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Button mnemonicParsing="false" onAction="#handleBtn2" styleClass="primary-background" stylesheets="@../values/styles.css" text="1 - 2" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="30.0" right="30.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Label prefWidth="115.0" text="Ac Milan" textFill="#e4dddd">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane layoutX="10.0" layoutY="565.0" prefHeight="2.0" prefWidth="507.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="568.0" prefHeight="59.0" prefWidth="200.0">
+                           <children>
+                              <Label prefWidth="115.0" text="Inter" textFill="#e4dddd">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Button mnemonicParsing="false" onAction="#handleBtn2" styleClass="primary-background" stylesheets="@../values/styles.css" text="5 - 1" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="30.0" right="30.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Label prefWidth="115.0" text="Udinese" textFill="#e4dddd">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane layoutX="10.0" layoutY="627.0" prefHeight="2.0" prefWidth="507.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="630.0" prefHeight="59.0" prefWidth="200.0">
+                           <children>
+                              <Label prefWidth="115.0" text="Wolfsburg" textFill="#e4dddd">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Button mnemonicParsing="false" onAction="#handleBtn2" styleClass="primary-background" stylesheets="@../values/styles.css" text="2 - 3" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="30.0" right="30.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Label prefWidth="115.0" text="Mainz" textFill="#e4dddd">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane layoutX="10.0" layoutY="689.0" prefHeight="2.0" prefWidth="507.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="692.0" prefHeight="59.0" prefWidth="200.0">
+                           <children>
+                              <Label prefWidth="115.0" text="Lyon" textFill="#e4dddd">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Button mnemonicParsing="false" onAction="#handleBtn2" styleClass="primary-background" stylesheets="@../values/styles.css" text="3 - 0" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="30.0" right="30.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Label prefWidth="115.0" text="Nice" textFill="#e4dddd">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="1010.0" layoutY="107.0" prefHeight="805.0" prefWidth="323.0" styleClass="primary-background-darker" stylesheets="@../values/styles.css">
+                     <children>
+                        <Pane layoutX="10.0" layoutY="204.0" prefHeight="2.0" prefWidth="200.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="323.0" text="Top Leagues" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Pane prefHeight="2.0" prefWidth="200.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <ImageView fitHeight="193.0" fitWidth="323.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/LAliga.png" />
+                           </image></ImageView>
+                        <Pane layoutX="10.0" layoutY="244.0" prefHeight="2.0" prefWidth="200.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <ImageView fitHeight="193.0" fitWidth="346.0" layoutX="10.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Bundesliga.png" />
+                           </image>
+                        </ImageView>
+                        <Pane layoutX="10.0" layoutY="237.0" prefHeight="2.0" prefWidth="200.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <ImageView fitHeight="193.0" fitWidth="323.0" layoutX="10.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/premierLeague.jpg" />
+                           </image>
+                        </ImageView>
+                        <Pane layoutX="10.0" layoutY="432.0" prefHeight="2.0" prefWidth="200.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                        <ImageView fitHeight="193.0" fitWidth="323.0" layoutX="10.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/SerieA.png" />
+                           </image></ImageView>
+                        <Pane layoutX="10.0" layoutY="627.0" prefHeight="2.0" prefWidth="200.0" styleClass="white-background" stylesheets="@../values/styles.css" />
+                     </children></VBox>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</GridPane>
